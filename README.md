@@ -122,18 +122,3 @@ Cada sección del informe escrito referencia formalmente la sección correspondi
 | ↳ `4.4` | Sec. 3.4 (Hipótesis 4) | **Cátedra:** Consumo de frutas y verduras vs. recomendación OMS de 5 porciones (Paso 1) |
 | ↳ `4.5` | Sec. 3.5 (Hipótesis 5) | **Cátedra:** IMC por medición física según niveles de actividad física (Paso 2) |
 | ↳ `4.6` | Sec. 3.6 (Hipótesis 6) | **Cátedra:** Relación lineal múltiple entre glucemia en ayunas, IMC, presión, cintura y edad (Paso 3) |
-
-## Prueba de reproducción realizada
-
-Se ejecutó la notebook completa en Linux con Python 3.14, un entorno virtual nuevo y una carpeta que inicialmente contenía únicamente la notebook y los dos ZIP. Todas las celdas finalizaron sin errores. No se utilizó una carpeta de datos previamente extraída.
-
-`requirements-lock.txt` registra las versiones exactas de ese entorno (Python 3.14). Para reproducirlo, instalar Python 3.14 y Git, clonar este repositorio, crear y activar el entorno virtual como se indica arriba y ejecutar:
-
-```bash
-python -m pip install -r requirements-lock.txt
-python -m jupyter nbconvert --to notebook --execute TPE.ipynb --output TPE_resultado.ipynb --ExecutePreprocessor.timeout=600
-```
-
-Ejecutar desde la raíz del repositorio. El resultado esperado es un código de salida 0 y el archivo `TPE_resultado.ipynb` sin salidas de tipo error. Para otra versión de Python usar `requirements.txt`; esas combinaciones no fueron comprobadas. La instalación inicial requiere internet; ambos archivos de datos están incluidos.
-
-Para simular una PC sin herramientas, usar una máquina virtual nueva, instalar Python 3.14 y Git y seguir esos pasos. La prueba realizada aquí aísla las dependencias de Python y los archivos de entrada, pero comparte el sistema operativo anfitrión.
