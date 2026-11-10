@@ -1,0 +1,29 @@
+# Ambientes virtuales
+venv/
+env/
+.venv/
+ENV/
+
+# Jupyter Checkpoints y temporales
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Carpeta generada automáticamente en tiempo de ejecución al descomprimir
+ENFR2018_datos/
+
+# Salidas temporales de pruebas de ejecución
+test_executed.ipynb
+TPE_resultado.ipynb
+
+# Archivos crudos descargados originales (reemplazados por TPE.ipynb e Informe_TPE_Grupo28.pdf)
+TPE(4).ipynb
+Infome TPE - Fundamentos de Ciencias de Datos.docx-7.pdf
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
